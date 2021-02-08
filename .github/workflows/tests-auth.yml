@@ -1,8 +1,6 @@
-<<<<<<< HEAD:.github/workflows/tests.yml
 name: tests
 
-on:
-  pull_request
+on: pull_request
 
 jobs:
   build:
@@ -10,16 +8,3 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: cd auth && npm install && npm run test:ci
-=======
-name: tests-auth
-
-on:
-  pull_request
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: cd auth && npm install && npm run test:ci
->>>>>>> 1fd22874bfba26eebc316b456a18a21d586f527d:.github/workflows/tests-auth.yml
